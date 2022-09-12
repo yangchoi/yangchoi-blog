@@ -10,7 +10,6 @@
           </ul>
         </li>
       </ul>
-    
     </div>
     <div class="window">
       <div class="title-bar">
@@ -19,14 +18,11 @@
         <div class="details-bar">
           <span>{{ description }}</span>
         </div>
-      
-
       <div class="window-pane">
         <div class="square">
           <img src="../assets/cat.png">
         </div>
       </div>
-
     <div class="standard-dialog center scale-down">
       <h1 class="dialog-text">Contact here 👇</h1>
         <ul>
