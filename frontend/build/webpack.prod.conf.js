@@ -4,6 +4,7 @@ const utils = require('./utils')
 const webpack = require('webpack')
 const config = require('../config')
 const merge = require('webpack-merge')
+const CnameWebpackPlugin = require('cname-webpack-plugin');
 const baseWebpackConfig = require('./webpack.base.conf')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
@@ -141,5 +142,13 @@ if (config.build.bundleAnalyzerReport) {
   const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
   webpackConfig.plugins.push(new BundleAnalyzerPlugin())
 }
+
+module.exports = {
+  plugins: [
+    new CnameWebpackPlugin({
+      domain: 'yangchoi.dev',
+    })
+  ],
+};
 
 module.exports = webpackConfig
