@@ -1,7 +1,8 @@
 {
-  "name": "backend",
+  "name": "yangchoi-blog",
   "version": "0.0.0",
   "private": true,
+  "repository": "yangchoi/yangchoi-blog",
   "homepage": "https://yangchoi.dev/",
   "scripts": {
     "start": "node ./bin/www"
